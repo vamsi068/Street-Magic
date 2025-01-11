@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Login Form</h2>
+        <div class="tabs">
+            <button class="tab active" id="login-tab" onclick="showForm('login')">Login</button>
+            <button class="tab" id="signup-tab" onclick="showForm('signup')">Signup</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" class="form active">
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <a href="#" class="forgot">Forgot password?</a>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signup-form" class="form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit" class="btn">Signup</button>
+        </form>
+
+        <p class="signup-link" id="footer-text">Not a member? <a href="#" onclick="showForm('signup')">Signup now</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

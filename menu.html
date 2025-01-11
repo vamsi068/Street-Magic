@@ -1,0 +1,2928 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Street Magic - Menu</title>
+  <link rel="stylesheet" type="text/css" href="sty.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="Images\streetmagic.jpeg" alt="Street Magic Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="f">Home</a></li>
+      <li><a href="#about" class="f">About</a></li>
+      <li><a href="#reservations" class="f">Reservations</a></li>
+      <li><a href="#contact" class="f">Contact</a></li>
+      <a href="menu.html" class="btn">Menu</a>
+      <a href="login.html" class="btn">Login</a>
+    </ul>
+  </nav>
+</header>
+
+<div class="cart-container">
+
+  <div class="side-headings">
+    <h3>Quick Navigation</h3>
+    <ul>
+      <li><a href="#burgers">Burgers</a></li>
+      <li><a href="#sandwichs">Sandwichs</a></li>
+      <li><a href="#Fried Snacks">Fried Snacks</a></li>
+      <li><a href="#French Fries">French Fries</a></li>
+      <li><a href="#Fried Chicken">Fried Chicken</a></li>
+      <li><a href="#Chicken Wings">Chicken Wings</a></li>
+      <li><a href="#Boneless Strips">Boneless Strips</a></li>
+      <li><a href="#Chicken Nuggets, Popcorn, Prawns">Chicken Nuggets, Popcorn, Prawns</a></li>
+      <li><a href="#Waffles">Waffles</a></li>
+      <li><a href="#Pop Waffles">Pop Waffles</a></li>
+      <li><a href="#Mini Waffles Combo">Mini Waffles Combo</a></li>
+      <li><a href="#Chines">Chines</a></li>
+      <li><a href="#Falooda">Falooda</a></li>
+      <li><a href="#Plain Scoops">Plain Scoops</a></li>
+      <li><a href="#Mocktails">Mocktails</a></li>
+      <li><a href="#MilkShakes">MilkShakes</a></li>
+      <li><a href="#ThickShakes">ThickShakes</a></li>
+      <li><a href="#Combos">Combos</a></li>
+      <li><a href="#Soft drinks">Soft drinks</a></li>
+      <li><a href="#Water Bottle">Water Bottle</a></li>
+    </ul>
+  </div>
+  
+  
+  <section class="menu">
+    <h1>Our Menu</h1>
+
+    <!-- Burger Section -->
+    <div class="menu-group" id="burgers">
+      <h2>Burgers</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Burger\Veg Buurger.jpg" alt="Veg Burger" onclick="addToCart('Veg Burger', 100, parseInt(document.getElementById('quantity-burger').value))">
+          <h3>Veg Burger</h3>
+          <p><strong>Price: ₹100</strong></p>
+          <p data-stock="Burger">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-burger">Quantity:</label>
+            <select id="quantity-burger">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Burger\Veg Cheese Burger.jpg" alt="Veg Cheese Burger" onclick="addToCart('Veg Cheese Burger', 140, parseInt(document.getElementById('quantity-burger').value))">
+          <h3>Veg Cheese Burger</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <p data-stock="Burger">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-burger">Quantity:</label>
+            <select id="quantity-burger">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Burger\Panner Burger.jpeg" alt="Panner Burger" onclick="addToCart('Panner Burger', 140, parseInt(document.getElementById('quantity-burger').value))">
+          <h3>Panner Burger</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <p data-stock="Burger">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-burger">Quantity:</label>
+            <select id="quantity-burger">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Burger\Chicken Burger.webp" alt="Chicken Burger" onclick="addToCart('Chicken Burger', 120, parseInt(document.getElementById('quantity-burger').value))">
+          <h3>Chicken Burger</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <p data-stock="Burger">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-burger">Quantity:</label>
+            <select id="quantity-burger">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Burger\Chicken Cheese Burger.jpg" alt="Chicken Cheese Burger" onclick="addToCart('Chicken Cheese Burger Burger', 140, parseInt(document.getElementById('quantity-burger').value))">
+          <h3>Chicken Cheese Burger</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <p data-stock="Burger">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-burger">Quantity:</label>
+            <select id="quantity-burger">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Add more Burgers items here -->
+
+      </div>
+    </div>
+      
+
+    <!-- Sandwichs Section -->
+    <div class="menu-group" id="sandwichs">
+      <h2>Sandwichs</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\sandwich\Veg Sandwich.webp" alt="Veg Sandwich" onclick="addToCart('Veg Sandwich', 129, parseInt(document.getElementById('quantity-Sandwich').value))">
+          <h3>Veg Sandwich</h3>
+          <p><strong>Price: ₹129</strong></p>
+          <p data-stock="Sandwich">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Sandwich">Quantity:</label>
+            <select id="quantity-Sandwich">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\sandwich\Corn Sandwich.webp" alt="Corn Sandwich" onclick="addToCart('Corn Sandwich', 159, parseInt(document.getElementById('quantity-Sandwich').value))">
+          <h3>Corn Sandwich</h3>
+          <p><strong>Price: ₹159</strong></p>
+          <p data-stock="Sandwich">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Sandwich">Quantity:</label>
+            <select id="quantity-Sandwich">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\sandwich\Cheese sandwich.jpg" alt="Corn Sandwich" onclick="addToCart('Cheese sandwich', 159, parseInt(document.getElementById('quantity-Sandwich').value))">
+          <h3>Cheese sandwich</h3>
+          <p><strong>Price: ₹159</strong></p>
+          <p data-stock="Sandwich">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Sandwich">Quantity:</label>
+            <select id="quantity-Sandwich">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\sandwich\Panner Sandwich.avif" alt="Panner Sandwich" onclick="addToCart('Panner Sandwich', 169, parseInt(document.getElementById('quantity-Sandwich').value))">
+          <h3>Panner Sandwich</h3>
+          <p><strong>Price: ₹169</strong></p>
+          <p data-stock="Sandwich">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Sandwich">Quantity:</label>
+            <select id="quantity-Sandwich">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\sandwich\Chicken Sandwich.webp" alt="Chicken Sandwich" onclick="addToCart('Chicken Sandwich', 159, parseInt(document.getElementById('quantity-Sandwich').value))">
+          <h3>Chicken Sandwich</h3>
+          <p><strong>Price: ₹159</strong></p>
+          <p data-stock="Sandwich">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Sandwich">Quantity:</label>
+            <select id="quantity-Sandwich">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\sandwich\Chicken Cheese Sandwich.webp" alt="Chicken Cheese Sandwich" onclick="addToCart('Chicken Cheese Sandwich', 169, parseInt(document.getElementById('quantity-Sandwich').value))">
+          <h3>Chicken Cheese Sandwich</h3>
+          <p><strong>Price: ₹169</strong></p>
+          <p data-stock="Sandwich">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Sandwich">Quantity:</label>
+            <select id="quantity-Sandwich">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+ 
+        <!-- Add more Sandwichs items here -->
+      </div>
+    </div>
+
+
+    <!-- Fried Snacks Section -->
+    <div class="menu-group" id="Fried Snacks">
+      <h2>Fried Snacks</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Veg Fried Snacks\Veg Corn rolls.webp" alt="Veg Corn rolls 5pc" onclick="addToCart('Veg Corn rolls 5pc', 130, parseInt(document.getElementById('quantity-Corn rolls').value))">
+          <h3>Veg Corn rolls 5pc</h3>
+          <p><strong>Price: ₹130</strong></p>
+          <p data-stock="Veg Corn rolls">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Corn rolls">Quantity:</label>
+            <select id="quantity-Corn rolls">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Veg Fried Snacks\Veg Fingers.jpg" alt="Veg Fingers 5pc" onclick="addToCart('Veg Fingers 5pc', 130, parseInt(document.getElementById('quantity-Veg Fingers').value))">
+          <h3>Veg Fingers 5pc</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Veg Fingers">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Veg Fingers">Quantity:</label>
+            <select id="quantity-Veg Fingers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Veg Fried Snacks\Veg aloo tikki.jpg" alt="Veg aloo tikki 4pc" onclick="addToCart('Veg aloo tikki 4pc', 150, parseInt(document.getElementById('quantity-Veg aloo tikki').value))">
+          <h3>Veg aloo tikki 4pc</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Veg aloo tikki 4pc">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Corn rolls">Quantity:</label>
+            <select id="quantity-Corn rolls">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Veg Fried Snacks\Veg Nuggets.jpg" alt="Veg Nuggets 10pc" onclick="addToCart('Veg Nuggets 10pc', 150, parseInt(document.getElementById('quantity-Veg Nuggets').value))">
+          <h3>Veg Nuggets 10pc</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Veg Nuggets">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Veg Nuggets">Quantity:</label>
+            <select id="quantity-Veg Nuggets">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Veg Fried Snacks\Veg Lollipop.jpg" alt="Veg Lollipop 5pc" onclick="addToCart('Veg Lollipop 5pc', 150, parseInt(document.getElementById('quantity-Veg Lollipop').value))">
+          <h3>Veg Lollipop 5pc</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Veg Lollipop">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Veg Lollipop">Quantity:</label>
+            <select id="quantity-Veg Lollipop">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+       
+        <!-- Add more Fried Snacks items here -->
+        
+      </div>
+    </div>
+
+
+    <!-- French Fries Section -->
+    <div class="menu-group" id="French Fries">
+      <h2>French Fries</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\French Fries\Salted French Fries.jpeg" alt="Salted French Fries" onclick="addToCart('Salted French Fries', 100, parseInt(document.getElementById('quantity-French Fries').value))">
+          <h3>Salted French Fries</h3>
+          <p><strong>Price: ₹100</strong></p>
+          <p data-stock="French Fries">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-French Fries">Quantity:</label>
+            <select id="quantity-French Fries">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\French Fries\Peri Peri French Fries.jpeg" alt="Peri Peri French Fries" onclick="addToCart('Peri Peri French Fries', 100, parseInt(document.getElementById('quantity-French Fries').value))">
+          <h3>Peri Peri French Fries</h3>
+          <p><strong>Price: ₹110</strong></p>
+          <p data-stock="French Fries">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-French Fries">Quantity:</label>
+            <select id="quantity-French Fries">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\French Fries\Cheese French Fries.jpeg" alt="Cheese French Fries" onclick="addToCart('Cheese French Fries', 130, parseInt(document.getElementById('quantity-French Fries').value))">
+          <h3>Cheese French Fries</h3>
+          <p><strong>Price: ₹130</strong></p>
+          <p data-stock="French Fries">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-French Fries">Quantity:</label>
+            <select id="quantity-French Fries">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+       
+        <!-- Add more French Fries items here -->
+        
+      </div>
+    </div>
+
+
+    <!-- Fried Chicken Section -->
+    <div class="menu-group" id="Fried Chicken">
+      <h2>Fried Chicken</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Fried Chicken\Fried Chicken 2pc.jpg" alt="Fried Chicken 2pc" onclick="addToCart('Fried Chicken 2pc', 180, parseInt(document.getElementById('quantity-Fried Chicken').value))">
+          <h3>Fried Chicken 2pc</h3>
+          <p><strong>Price: ₹180</strong></p>
+          <p data-stock="Fried Chicken 2pc">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Fried Chicken">Quantity:</label>
+            <select id="quantity-Fried Chicken">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Fried Chicken\Fried Chicken 4pc.jpg" alt="Fried Chicken 4pc" onclick="addToCart('Fried Chicken 4pc', 320, parseInt(document.getElementById('quantity-Fried Chicken').value))">
+          <h3>Fried Chicken 4pc</h3>
+          <p><strong>Price: ₹320</strong></p>
+          <p data-stock="Fried Chicken">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Fried Chicken">Quantity:</label>
+            <select id="quantity-Fried Chicken">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Fried Chicken\Fried Chicken 6pc.jpg" alt="Fried Chicken 6pc" onclick="addToCart('Fried Chicken 6pc', 480, parseInt(document.getElementById('quantity-Fried Chicken').value))">
+          <h3>Fried Chicken 6pc</h3>
+          <p><strong>Price: ₹480</strong></p>
+          <p data-stock="Fried Chicken">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Fried Chicken">Quantity:</label>
+            <select id="quantity-Fried Chicken">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Add more Fried Chicken items here -->
+        
+      </div>
+    </div>
+    
+
+    <!-- Chicken Wings Section -->
+    <div class="menu-group" id="Chicken Wings">
+      <h2>Chicken Wings</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Chicken Wings\Chicken Wings 4pc.jpg" alt="Chicken Wings 4pc" onclick="addToCart('Chicken Wings 4pc', 170, parseInt(document.getElementById('quantity-Chicken Wings').value))">
+          <h3>Chicken Wings 4pc</h3>
+          <p><strong>Price: ₹170</strong></p>
+          <p data-stock="Chicken Wings">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Chicken Wings">Quantity:</label>
+            <select id="quantity-Chicken Wings">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Chicken Wings\Chicken Wings 6pc.jpg" alt="Chicken Wings 6pc" onclick="addToCart('Chicken Wings 6pc', 290, parseInt(document.getElementById('quantity-Chicken Wings').value))">
+          <h3>Chicken Wings 6pc</h3>
+          <p><strong>Price: ₹290</strong></p>
+          <p data-stock="Chicken Wings 6pc">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Chicken Wings">Quantity:</label>
+            <select id="quantity-Chicken Wings">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Chicken Wings\Chicken Wings 8pc.jpg" alt="Chicken Wings 12pc" onclick="addToCart('Chicken Wings 8pc', 490, parseInt(document.getElementById('quantity-Chicken Wings').value))">
+          <h3>Chicken Wings 8pc</h3>
+          <p><strong>Price: ₹490</strong></p>
+          <p data-stock="Chicken Wings 12pc">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-Chicken Wings">Quantity:</label>
+            <select id="quantity-Chicken Wings">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Add more Chicken Wings items here -->
+        
+      </div>
+    </div>
+
+
+    <!-- Boneless Strips Section -->
+    <div class="menu-group" id="Boneless Strips">
+      <h2>Boneless Strips</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Boneless Strips\Bone Less Strips.jpeg" alt="BoneLess Strips 3pc" onclick="addToCart('BoneLess Strips 3pc', 170, parseInt(document.getElementById('quantity-BoneLess Strips').value))">
+          <h3>BoneLess Strips 3pc</h3>
+          <p><strong>Price: ₹170</strong></p>
+          <p data-stock="BoneLess Strips 3pc">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-BoneLess Strips">Quantity:</label>
+            <select id="quantity-BoneLess Strips">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Boneless Strips\Bone Less Strips.jpeg" alt="BoneLess Strips 5pc" onclick="addToCart('BoneLess Strips 5pc', 290, parseInt(document.getElementById('quantity-BoneLess Strips').value))">
+          <h3>BoneLess Strips 5pc</h3>
+          <p><strong>Price: ₹290</strong></p>
+          <p data-stock="BoneLess Strips 5pc">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-BoneLess Strips">Quantity:</label>
+            <select id="quantity-BoneLess Strips">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Boneless Strips\Bone Less Strips.jpeg" alt="BoneLess Strips 12pc" onclick="addToCart('BoneLess Strips 8pc', 490, parseInt(document.getElementById('quantity-BoneLess Strips').value))">
+          <h3>BoneLess Strips 8pc</h3>
+          <p><strong>Price: ₹490</strong></p>
+          <p data-stock="BoneLess Strips 12pc">Stock: 10</p>
+          <div class="quantity">
+            <label for="quantity-BoneLess Strips">Quantity:</label>
+            <select id="quantity-BoneLess Strips">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+       
+        <!-- Add more Boneless Strips items here -->
+        
+      </div>
+    </div>
+
+
+    <!-- Chicken Nuggets, Popcorn, Prawns Section -->
+    <div class="menu-group" id="Chicken Nuggets, Popcorn, Prawns">
+      <h2>Chicken Nuggets, Popcorn, Prawns</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Chicken Nuggets\Chicken Nuggets.jpeg" alt="Chicken Nuggets" onclick="addToCart('Chicken Nuggets', 160, parseInt(document.getElementById('quantity-Chicken Nuggets').value))">
+          <h3>Chicken Nuggets</h3>
+          <p><strong>Price: ₹160</strong></p>
+          <p data-stock="Chicken Nuggets">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Chicken Nuggets">Quantity:</label>
+            <select id="quantity-Chicken Nuggets">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\chicken popcorn\Chicken Popcorn.jpg" alt="Chicken Popcorn Regular" onclick="addToCart('Chicken Popcorn Regular', 150, parseInt(document.getElementById('quantity-Chicken Popcorn').value))">
+          <h3>Chicken Popcorn Regular</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Chicken Popcorn Regular">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Chicken Popcorn">Quantity:</label>
+            <select id="quantity-Chicken Popcorn">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\chicken popcorn\Chicken Popcorn.jpg" alt="Chicken Popcorn Large" onclick="addToCart('Chicken Popcorn Large', 180, parseInt(document.getElementById('quantity-Chicken Popcorn').value))">
+          <h3>Chicken Popcorn Large</h3>
+          <p><strong>Price: ₹180</strong></p>
+          <p data-stock="Chicken Popcorn Regular">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Chicken Popcorn">Quantity:</label>
+            <select id="quantity-Chicken Popcorn">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Prawns\Prawns.jpg" alt="Prawns Regular" onclick="addToCart('Prawns Regular', 230, parseInt(document.getElementById('quantity-Prawns').value))">
+          <h3>Prawns Regular</h3>
+          <p><strong>Price: ₹230</strong></p>
+          <p data-stock="Prawns">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Prawns">Quantity:</label>
+            <select id="quantity-Prawns">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Non Veg Fries\Prawns\Prawns.jpg" alt="Prawns Large" onclick="addToCart('Prawns Regular', 230, parseInt(document.getElementById('quantity-Prawns').value))">
+          <h3>Prawns Large</h3>
+          <p><strong>Price: ₹330</strong></p>
+          <p data-stock="Prawns">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Prawns">Quantity:</label>
+            <select id="quantity-Prawns">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Add more Chicken Nuggets, Popcorn, Prawns items here -->
+        
+      </div>
+    </div>
+
+
+    <!-- Waffles Section -->
+    <div class="menu-group" id="Waffles">
+      <h2>Waffles</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="Belgian chocolate" onclick="addToCart('Belgian chocolate', 139, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Belgian chocolate</h3>
+          <p><strong>Price: ₹139</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="Dark chocolate overload" onclick="addToCart('Dark chocolate overload', 139, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Dark chocolate overload</h3>
+          <p><strong>Price: ₹139</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="KitKat whity" onclick="addToCart('KitKat whity', 149, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>KitKat whity</h3>
+          <p><strong>Price: ₹149</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="Snickers" onclick="addToCart('Snickers', 149, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Snickers</h3>
+          <p><strong>Price: ₹149</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="Oreo crumble" onclick="addToCart('Oreo crumble', 149, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Oreo crumble</h3>
+          <p><strong>Price: ₹149</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="Cream’y Berry" onclick="addToCart('Cream’y Berry', 149, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Cream’y Berry</h3>
+          <p><strong>Price: ₹149</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="Cream’y Strawberry" onclick="addToCart('Cream’y Strawberry', 149, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Creamy Strawberry</h3>
+          <p><strong>Price: ₹149</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="trygo chocolate Waffles" onclick="addToCart('trygo chocolate Waffles', 160, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>trygo chocolate Waffles</h3>
+          <p><strong>Price: ₹160</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="Honey Waffle" onclick="addToCart('Honey Waffle', 170, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Honey Waffle</h3>
+          <p><strong>Price: ₹170</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle.avif" alt="Crunchy Biscoffy Waffle" onclick="addToCart('Crunchy Biscoffy Waffle', 170, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Crunchy Biscoffy Waffle</h3>
+          <p><strong>Price: ₹170</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Add more Waffles items here -->
+        
+      </div>
+    </div>
+
+    <!-- Pop Waffles Section -->
+    <div class="menu-group" id="Pop Waffles">
+      <h2>Pop Waffles</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="Belgian chocolate Pop" onclick="addToCart('Belgian chocolate Pop', 70, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Belgian chocolate Pop</h3>
+          <p><strong>Price: ₹70</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="Dark chocolate overload Pop" onclick="addToCart('Dark chocolate overload Pop', 70, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Dark chocolate overload Pop</h3>
+          <p><strong>Price: ₹70</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="KitKat whity Pop" onclick="addToCart('KitKat whity Pop', 80, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>KitKat whity Pop</h3>
+          <p><strong>Price: ₹80</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="Snickers Pop" onclick="addToCart('Snickers Pop', 80, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Snickers Pop</h3>
+          <p><strong>Price: ₹80</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="Oreo crumble Pop" onclick="addToCart('Oreo crumble Pop', 80, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Oreo crumble Pop</h3>
+          <p><strong>Price: ₹80</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="Cream’y Berry Pop" onclick="addToCart('Cream’y Berry Pop', 90, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Cream’y Berry Pop</h3>
+          <p><strong>Price: ₹90</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="Cream’y Strawberry Pop" onclick="addToCart('Cream’y Strawberry Pop', 90, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Creamy Strawberry Pop</h3>
+          <p><strong>Price: ₹90</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="trygo chocolate Pop" onclick="addToCart('trygo chocolate Pop', 90, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>trygo chocolate Pop</h3>
+          <p><strong>Price: ₹190</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="Honey Waffle" onclick="addToCart('Honey Pop', 90, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Honey Pop</h3>
+          <p><strong>Price: ₹90</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Pop waffle.jpg" alt="Crunchy Biscoffy Pop" onclick="addToCart('Crunchy Biscoffy Pop', 100, parseInt(document.getElementById('quantity-Waffles').value))">
+          <h3>Crunchy Biscoffy Pop</h3>
+          <p><strong>Price: ₹100</strong></p>
+          <p data-stock="Waffles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles">Quantity:</label>
+            <select id="quantity-Waffles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+       
+        <!-- Add more Pop Waffles items here -->
+        
+      </div>
+    </div>
+
+    <!-- Mini Waffles Combo Section -->
+    <div class="menu-group" id="Mini Waffles Combo">
+      <h2>Mini Waffles Combo</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Mini waffle Combo.jpg" alt="Chocolate Boxs of 4" onclick="addToCart('Chocolate Boxs of 4', 280, parseInt(document.getElementById('quantity-Chocolate Boxs').value))">
+          <h3>Chocolate Boxs of 4</h3>
+          <p><strong>Price: ₹280</strong></p>
+          <p data-stock="Chocolate Boxs">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Chocolate Boxs">Quantity:</label>
+            <select id="quantity-Chocolate Boxs">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Mini waffle Combo.jpg" alt="Assorted Boxs of 4" onclick="addToCart('Assorted Boxs', 300, parseInt(document.getElementById('quantity-Assorted Boxs').value))">
+          <h3>Assorted Boxs of 4</h3>
+          <p><strong>Price: ₹300</strong></p>
+          <p data-stock="Assorted Boxs">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Assorted Boxs">Quantity:</label>
+            <select id="quantity-Assorted Boxs">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Mini waffle Combo.jpg" alt="Chocolate Boxs of 6" onclick="addToCart('Chocolate Boxs of 6', 320, parseInt(document.getElementById('quantity-Chocolate Boxs').value))">
+          <h3>Chocolate Boxs of 6</h3>
+          <p><strong>Price: ₹320</strong></p>
+          <p data-stock="Chocolate Boxs">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Chocolate Boxs">Quantity:</label>
+            <select id="quantity-Chocolate Boxs">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\Mini waffle Combo.jpg" alt="Assorted Boxs of 6" onclick="addToCart('Chocolate Boxs of 6', 350, parseInt(document.getElementById('quantity-Chocolate Boxs').value))">
+          <h3>Assorted Boxs of 6</h3>
+          <p><strong>Price: ₹350</strong></p>
+          <p data-stock="Assorted Boxs of">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Assorted Boxs">Quantity:</label>
+            <select id="quantity-Assorted Boxs">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Add more Mini Waffles Combo items here -->
+        
+      </div>
+    </div>
+
+
+    <!-- Waffles Cakes Section -->
+    <div class="menu-group" id="Waffles Cakes">
+      <h2>Waffles Cakes</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle Cake.jpeg" alt="Creany Berry & Strawberry Waffles Cakes" onclick="addToCart('Creany Berry & Strawberry Waffles Cakes', 320, parseInt(document.getElementById('quantity-Waffles Cakes').value))">
+          <h3>Creany Berry & Strawberry Waffles Cakes</h3>
+          <p><strong>Price: ₹320</strong></p>
+          <p data-stock="Waffles Cakes">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles Cakes">Quantity:</label>
+            <select id="quantity-Waffles Cakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle Cake.jpeg" alt="KitKat With Oreo Waffles Cakes" onclick="addToCart('KitKat With Oreo Waffles Cakes', 310, parseInt(document.getElementById('quantity-Waffles Cakes').value))">
+          <h3>KitKat With Oreo Waffles Cakes</h3>
+          <p><strong>Price: ₹310</strong></p>
+          <p data-stock="Waffles Cakes">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles Cakes">Quantity:</label>
+            <select id="quantity-Waffles Cakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle Cake.jpeg" alt="Triple Chocolate Waffles Cakes" onclick="addToCart('Triple Chocolate Waffles Cakes', 330, parseInt(document.getElementById('quantity-Waffles Cakes').value))">
+          <h3>Triple Chocolate Waffles Cakes</h3>
+          <p><strong>Price: ₹330</strong></p>
+          <p data-stock="Waffles Cakes">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles Cakes">Quantity:</label>
+            <select id="quantity-Waffles Cakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle Cake.jpeg" alt="Nuts Brown Waffles Cakes" onclick="addToCart('Nuts Brown Waffles Cakes', 340, parseInt(document.getElementById('quantity-Waffles Cakes').value))">
+          <h3>Nuts Brown Waffles Cakes</h3>
+          <p><strong>Price: ₹340</strong></p>
+          <p data-stock="Waffles Cakes">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles Cakes">Quantity:</label>
+            <select id="quantity-Waffles Cakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle Cake.jpeg" alt="Creany Berry & Strawberry Waffles Cakes" onclick="addToCart('Creany Berry & Strawberry Waffles Cakes', 540, parseInt(document.getElementById('quantity-Waffles Cakes').value))">
+          <h3>Creany Berry & Strawberry Waffles Cakes</h3>
+          <p><strong>Price: ₹540</strong></p>
+          <p data-stock="Waffles Cakes">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles Cakes">Quantity:</label>
+            <select id="quantity-Waffles Cakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle Cake.jpeg" alt="KitKat With Oreo Waffles Cakes" onclick="addToCart('KitKat With Oreo Waffles Cakes', 530, parseInt(document.getElementById('quantity-Waffles Cakes').value))">
+          <h3>KitKat With Oreo Waffles Cakes</h3>
+          <p><strong>Price: ₹530</strong></p>
+          <p data-stock="Waffles Cakes">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles Cakes">Quantity:</label>
+            <select id="quantity-Waffles Cakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle Cake.jpeg" alt="Triple Chocolate Waffles Cakes" onclick="addToCart('Triple Chocolate Waffles Cakes', 550, parseInt(document.getElementById('quantity-Waffles Cakes').value))">
+          <h3>Triple Chocolate Waffles Cakes</h3>
+          <p><strong>Price: ₹550</strong></p>
+          <p data-stock="Waffles Cakes">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles Cakes">Quantity:</label>
+            <select id="quantity-Waffles Cakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Waffles\waffle Cake.jpeg" alt="Nuts Brown Waffles Cakes" onclick="addToCart('Nuts Brown Waffles Cakes', 560, parseInt(document.getElementById('quantity-Waffles Cakes').value))">
+          <h3>Nuts Brown Waffles Cakes</h3>
+          <p><strong>Price: ₹560</strong></p>
+          <p data-stock="Waffles Cakes">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Waffles Cakes">Quantity:</label>
+            <select id="quantity-Waffles Cakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Add more Waffles Cakes items here -->
+        
+      </div>
+    </div>
+
+
+    <!-- Chines Section -->
+    <div class="menu-group" id="Chines">
+      <h2>Chines</h2>
+
+      <!-- Subheading for 1/2 Veg -->
+      <h3 class="menu-subheading">Veg and Non Veg</h3>
+
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Noodles\Vez Noodles.jpeg" alt="1/2 Vez & Egg" onclick="addToCart('1/2 Vez & Egg', 40, parseInt(document.getElementById('quantity-Noodles').value))">
+          <h3>1/2 Vez & Egg</h3>
+          <p><strong>Price: ₹40</strong></p>
+          <p data-stock="Noodles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Noodles">Quantity:</label>
+            <select id="quantity-Noodles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Chicken Manchurian.jpeg" alt="1/2 Chicken" onclick="addToCart('1/2 Chicken', 50, parseInt(document.getElementById('quantity-Noodles').value))">
+          <h3>1/2 Chicken</h3>
+          <p><strong>Price: ₹50</strong></p>
+          <p data-stock="Noodles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Noodles">Quantity:</label>
+            <select id="quantity-Noodles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subheading for Noodles -->
+      <h3 class="menu-subheading">Noodles</h3>
+      
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Noodles\Vez Noodles.jpeg" alt="Vez Noodles" onclick="addToCart('Vez Noodles', 70, parseInt(document.getElementById('quantity-Noodles').value))">
+          <h3>Vez Noodles</h3>
+          <p><strong>Price: ₹70</strong></p>
+          <p data-stock="Noodles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Noodles">Quantity:</label>
+            <select id="quantity-Noodles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Noodles\Egg Noodles.jpeg" alt="Egg Noodles" onclick="addToCart('Egg Noodles', 90, parseInt(document.getElementById('quantity-Noodles').value))">
+          <h3>Egg Noodles</h3>
+          <p><strong>Price: ₹90</strong></p>
+          <p data-stock="Noodles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Noodles">Quantity:</label>
+            <select id="quantity-Noodles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Noodles\Manchurian Noodles.jpeg" alt="Manchurian Noodles" onclick="addToCart('Manchurian Noodles', 90, parseInt(document.getElementById('quantity-Noodles').value))">
+          <h3>Manchurian Noodles</h3>
+          <p><strong>Price: ₹90</strong></p>
+          <p data-stock="Noodles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Noodles">Quantity:</label>
+            <select id="quantity-Noodles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Noodles\Chicken Noodles.jpeg" alt="Manchurian Noodles" onclick="addToCart('Chicken Noodles', 120, parseInt(document.getElementById('quantity-Noodles').value))">
+          <h3>Chicken Noodles</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <p data-stock="Noodles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Noodles">Quantity:</label>
+            <select id="quantity-Noodles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Noodles\Paneer Noodles.jpeg" alt="Paneer Noodles" onclick="addToCart('Paneer Noodles', 120, parseInt(document.getElementById('quantity-Noodles').value))">
+          <h3>Paneer Noodles</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <p data-stock="Noodles">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Noodles">Quantity:</label>
+            <select id="quantity-Noodles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subheading for Fried Rice -->
+      <h3 class="menu-subheading">Fried Rice</h3>
+
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Veg Fried Rice.jpeg" alt="Veg Fried Rice" onclick="addToCart('Veg Fried Rice', 70, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Veg Fried Rice</h3>
+          <p><strong>Price: ₹70</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Fried Rice">Quantity:</label>
+            <select id="quantity-Fried Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Jeera Rice.jpeg" alt="Jeera Rice" onclick="addToCart('Jeera Rice', 70, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Jeera Rice</h3>
+          <p><strong>Price: ₹70</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Fried Rice">Quantity:</label>
+            <select id="quantity-Fried Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Egg Fried Rice.jpeg" alt="Egg Fried Rice" onclick="addToCart('Egg Fried Rice', 90, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Egg Fried Rice</h3>
+          <p><strong>Price: ₹90</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Fried Rice">Quantity:</label>
+            <select id="quantity-Fried Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Manchurian Fried Rice.jpeg" alt="Manchurian Fried Rice" onclick="addToCart('Manchurian Fried Rice', 90, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Manchurian Fried Rice</h3>
+          <p><strong>Price: ₹90</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Veg-Fried-Rice">Quantity:</label>
+            <select id="quantity-Veg-Fried-Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Chicken Fried Rice.png" alt="Chicken Fried Rice" onclick="addToCart('Chicken Fried Rice', 120, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Chicken Fried Rice</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Fried Rice">Quantity:</label>
+            <select id="quantity-Fried Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Paneer Fried Rice.jpeg" alt="Paneer Fried Rice" onclick="addToCart('Paneer Fried Rice', 140, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Paneer Fried Rice</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Fried Rice">Quantity:</label>
+            <select id="quantity-Fried Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Corn Fried Rice.jpeg" alt="Corn Fried Rice" onclick="addToCart('Corn Fried Rice', 120, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Corn Fried Rice</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Fried Rice">Quantity:</label>
+            <select id="quantity-Fried Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Kaju Fried Rice.jpeg" alt="Kaju Fried Rice" onclick="addToCart('Kaju Fried Rice', 150, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Kaju Fried Rice</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Fried Rice">Quantity:</label>
+            <select id="quantity-Fried Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Fried Rice\Prawns Fried Rice.jpeg" alt="Prawns Fried Rice" onclick="addToCart('Prawns Fried Rice', 160, parseInt(document.getElementById('quantity-Fried Rice').value))">
+          <h3>Prawns Fried Rice</h3>
+          <p><strong>Price: ₹160</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Fried Rice">Quantity:</label>
+            <select id="quantity-Fried Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Subheading for veg starters -->
+      <h3 class="menu-subheading">veg starters</h3>
+
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Veg Starters\Veg Manchurian.jpeg" alt="Veg Manchurian" onclick="addToCart('Veg Manchurian', 80, parseInt(document.getElementById('quantity-Manchurian').value))">
+          <h3>Veg Manchurian</h3>
+          <p><strong>Price: ₹80</strong></p>
+          <p data-stock="Manchurian">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Manchurian">Quantity:</label>
+            <select id="quantity-Manchurian">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Veg Starters\Baby Corn Manchurian.jpeg" alt="Baby Corn Manchurian" onclick="addToCart('Baby Corn Manchurian', 120, parseInt(document.getElementById('quantity-Manchurian').value))">
+          <h3>Baby Corn Manchurian</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <p data-stock="Manchurian">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Manchurian">Quantity:</label>
+            <select id="quantity-Manchurian">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Veg Starters\Mushroom Manchurian.jpeg" alt="Mushroom Manchurian" onclick="addToCart('Mushroom Manchurian', 120, parseInt(document.getElementById('quantity-Manchurian').value))">
+          <h3>Mushroom Manchurian</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <p data-stock="Manchurian">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Manchurian">Quantity:</label>
+            <select id="quantity-Manchurian">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Veg Starters\Paneer Manchurian.jpeg" alt="Paneer Manchurian" onclick="addToCart('Paneer Manchurian', 150, parseInt(document.getElementById('quantity-Manchurian').value))">
+          <h3>Paneer Manchurian</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Manchurian">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Manchurian">Quantity:</label>
+            <select id="quantity-Manchurian">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Veg Starters\Chilli Mushroom.jpeg" alt="Chilli Mushroom" onclick="addToCart('Chilli Mushroom', 130, parseInt(document.getElementById('quantity-Manchurian').value))">
+          <h3>Chilli Mushroom</h3>
+          <p><strong>Price: ₹130</strong></p>
+          <p data-stock="Manchurian">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Manchurian">Quantity:</label>
+            <select id="quantity-Manchurian">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Subheading for non veg starters -->
+      <h3 class="menu-subheading">non veg starters</h3>
+
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Egg Manchurian.jpeg" alt="Egg Manchurian" onclick="addToCart('Egg Manchurian', 90, parseInt(document.getElementById('quantity-Manchurian').value))">
+          <h3>Egg Manchurian</h3>
+          <p><strong>Price: ₹90</strong></p>
+          <p data-stock="Manchurian">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Manchurian">Quantity:</label>
+            <select id="quantity-Manchurian">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Chicken Manchurian.jpeg" alt="Chicken Manchurian" onclick="addToCart('Chicken Manchurian', 150, parseInt(document.getElementById('quantity-Manchurian').value))">
+          <h3>Chicken Manchurian</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Manchurian">Quantity:</label>
+            <select id="quantity-Manchurian">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Chilli chicken.jpeg" alt="Chilli chicken" onclick="addToCart('Chilli chicken', 150, parseInt(document.getElementById('quantity-Manchurian').value))">
+          <h3>Chilli chicken</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <p data-stock="Manchurian">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Manchurian">Quantity:</label>
+            <select id="quantity-Manchurian">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Chilli chicken.jpeg" alt="chicken 65" onclick="addToCart('chicken 65', 160, parseInt(document.getElementById('quantity-Veg-Fried-Rice').value))">
+          <h3>chicken 65</h3>
+          <p><strong>Price: ₹160</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Veg-Fried-Rice">Quantity:</label>
+            <select id="quantity-Veg-Fried-Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Ginger Chicken.jpeg" alt="Ginger Chicken" onclick="addToCart('Ginger Chicken', 160, parseInt(document.getElementById('quantity-Veg-Fried-Rice').value))">
+          <h3>Ginger Chicken</h3>
+          <p><strong>Price: ₹160</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Veg-Fried-Rice">Quantity:</label>
+            <select id="quantity-Veg-Fried-Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Prawns Manchurian.jpeg" alt="Loose Prawns" onclick="addToCart('Loose Prawns', 160, parseInt(document.getElementById('quantity-Veg-Fried-Rice').value))">
+          <h3>Loose Prawns</h3>
+          <p><strong>Price: ₹160</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Veg-Fried-Rice">Quantity:</label>
+            <select id="quantity-Veg-Fried-Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Prawns Manchurian.jpeg" alt="Chilli Prawns" onclick="addToCart('Chilli Prawns', 170, parseInt(document.getElementById('quantity-Veg-Fried-Rice').value))">
+          <h3>Chilli Prawns</h3>
+          <p><strong>Price: ₹170</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Veg-Fried-Rice">Quantity:</label>
+            <select id="quantity-Veg-Fried-Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Prawns Manchurian.jpeg" alt="Prawns 65" onclick="addToCart('Loose Prawns 65', 170, parseInt(document.getElementById('quantity-Veg-Fried-Rice').value))">
+          <h3>Prawns 65</h3>
+          <p><strong>Price: ₹170</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Veg-Fried-Rice">Quantity:</label>
+            <select id="quantity-Veg-Fried-Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Chines\Non Veg Starters\Chicken Lollypop\Chicken Lollypop 4pc.jpg" alt="Chicken Lollypop 4pc" onclick="addToCart('Chicken Lollypop 4pc', 180, parseInt(document.getElementById('quantity-Veg-Fried-Rice').value))">
+          <h3>Chicken Lollypop 4pc</h3>
+          <p><strong>Price: ₹180</strong></p>
+          <p data-stock="Fried Rice">Stock: 50</p>
+          <div class="quantity">
+            <label for="quantity-Veg-Fried-Rice">Quantity:</label>
+            <select id="quantity-Veg-Fried-Rice">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Falooda Section -->
+    <div class="menu-group" id="Falooda">
+      <h2>Falooda</h2>
+      <div class="menu-items">
+        <!-- Add Falooda items here -->
+        <div class="menu-item">
+          <img src="Images\menu\Falooda\Vanilla Falooda.jpeg" alt="Vanilla Falooda" onclick="addToCart('Vanilla Falooda', 139, parseInt(document.getElementById('quantity-Falooda').value))">
+          <h3>Vanilla Falooda</h3>
+          <p><strong>Price: ₹139</strong></p>
+          <div class="quantity">
+            <label for="quantity-Falooda">Quantity:</label>
+            <select id="quantity-Falooda">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Falooda\Chocolate Falooda.jpeg" alt="Chocolate Falooda" onclick="addToCart('Chocolate Falooda', 149, parseInt(document.getElementById('quantity-Falooda').value))">
+          <h3>Chocolate Falooda</h3>
+          <p><strong>Price:₹149</strong></p>
+          <div class="quantity">
+            <label for="quantity-Falooda">Quantity:</label>
+            <select id="quantity-Falooda">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Falooda\Strawberry Falooda.jpeg" alt="Strawberry Falooda" onclick="addToCart('Strawberry Falooda', 139, parseInt(document.getElementById('quantity-Falooda').value))">
+          <h3>Strawberry Falooda</h3>
+          <p><strong>Price:₹139</strong></p>
+          <div class="quantity">
+            <label for="quantity-Falooda">Quantity:</label>
+            <select id="quantity-Falooda">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Falooda\American Dry Fruit Falooda.jpeg" alt="American Dry Fruit Falooda" onclick="addToCart('American Dry Fruit Falooda', 159, parseInt(document.getElementById('quantity-Falooda').value))">
+          <h3> American Dry Fruit Falooda</h3>
+          <p><strong>Price:₹159</strong></p>
+          <div class="quantity">
+            <label for="quantity-Falooda">Quantity:</label>
+            <select id="quantity-Falooda">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- Plain Scoops -->
+    <div class="menu-group" id="Plain Scoops">
+      <h2>Plain Scoops</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Plain Scoops\Venilia scoop.jpeg" alt="Venilia scoop" onclick="addToCart('Venilia scoop', 50, parseInt(document.getElementById('quantity-Plain Scoops').value))">
+          <h3>Venilia scoop</h3>
+          <p><strong>Price: ₹50</strong></p>
+          <div class="quantity">
+            <label for="quantity-Plain Scoops">Quantity:</label>
+            <select id="quantity-Plain Scoops">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Plain Scoops\Chocolate Plain Scoops.jpeg" alt="Chocolate Plain Scoops" onclick="addToCart('Chocolate Plain Scoops', 55, parseInt(document.getElementById('quantity-Falooda').value))">
+          <h3>Chocolate Plain Scoops</h3>
+          <p><strong>Price: ₹55</strong></p>
+          <div class="quantity">
+            <label for="quantity-Falooda">Quantity:</label>
+            <select id="quantity-Falooda">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Plain Scoops\Butterschoch Plain Scoops.jpeg" alt="Butterschoch Plain Scoops" onclick="addToCart('Butterschoch Plain Scoops', 55, parseInt(document.getElementById('quantity-Falooda').value))">
+          <h3>Butterschoch Plain Scoops</h3>
+          <p><strong>Price: ₹55</strong></p>
+          <div class="quantity">
+            <label for="quantity-Falooda">Quantity:</label>
+            <select id="quantity-Falooda">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Plain Scoops\Strawberry Scoop.jpeg" alt="Strawberry Scoop" onclick="addToCart('Strawberry Scoop', 50, parseInt(document.getElementById('quantity-Falooda').value))">
+          <h3>Strawberry Scoop</h3>
+          <p><strong>Price: ₹50</strong></p>
+          <div class="quantity">
+            <label for="quantity-Falooda">Quantity:</label>
+            <select id="quantity-Falooda">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Add Plain Scoops items here -->
+       
+      </div>
+    </div>
+
+    <!-- Mocktails -->
+    <div class="menu-group" id="Mocktails">
+      <h2>Mocktails</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Mocktails\Fresh Lime Soda.jpeg" alt="Fresh Lime Soda" onclick="addToCart('Fresh Lime Soda', 100, parseInt(document.getElementById('quantity-Mocktails').value))">
+          <h3>Fresh Lime Soda</h3>
+          <p><strong>Price: ₹100</strong></p>
+          <div class="quantity">
+            <label for="quantity-Mocktails">Quantity:</label>
+            <select id="quantity-Mocktails">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Mocktails\Mint Mojito.jpeg" alt="Mint Mojito" onclick="addToCart('Mint Mojito', 120, parseInt(document.getElementById('quantity-Mocktails').value))">
+          <h3>Mint Mojito</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <div class="quantity">
+            <label for="quantity-Mocktails">Quantity:</label>
+            <select id="quantity-Mocktails">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Mocktails\Blue Curacao Mocktail.jpeg" alt="Blue Curacao" onclick="addToCart('Blue Curacao', 120, parseInt(document.getElementById('quantity-Mocktails').value))">
+          <h3>Blue Curacao</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <div class="quantity">
+            <label for="quantity-Mocktails">Quantity:</label>
+            <select id="quantity-Mocktails">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Mocktails\Strawberry Mocktail.jpeg" alt="Strawberry" onclick="addToCart('Strawberry', 120, parseInt(document.getElementById('quantity-Mocktails').value))">
+          <h3>Strawberry</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <div class="quantity">
+            <label for="quantity-Mocktails">Quantity:</label>
+            <select id="quantity-Mocktails">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Mocktails\Blue Berry.jpeg" alt="Blue Berry" onclick="addToCart('Blue Berry', 120, parseInt(document.getElementById('quantity-Mocktails').value))">
+          <h3>Blue Berry</h3>
+          <p><strong>Price: ₹120</strong></p>
+          <div class="quantity">
+            <label for="quantity-Mocktails">Quantity:</label>
+            <select id="quantity-Mocktails">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+       
+        <!-- Add Mocktails items here -->
+       
+      </div>
+    </div>
+
+
+    <!-- MilkShakes -->
+    <div class="menu-group" id="MilkShakes">
+      <h2>MilkShakes</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Nuts Milkshake.jpeg" alt="Nuts Milkshake" onclick="addToCart('Nuts Milkshake', 140, parseInt(document.getElementById('quantity-Milkshakes').value))">
+          <h3>Nuts Milkshake</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <div class="quantity">
+            <label for="quantity-Milkshakes">Quantity:</label>
+            <select id="quantity-Milkshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Oreo Milkshake.jpeg" alt="Oreo Milkshake" onclick="addToCart('Oreo Milkshake', 140, parseInt(document.getElementById('quantity-Milkshakes').value))">
+          <h3>Oreo Milkshake</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <div class="quantity">
+            <label for="quantity-Milkshakes">Quantity:</label>
+            <select id="quantity-Milkshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Ferrero Rocher Milkshake.jpeg" alt="Ferrero Rocher Milkshake" onclick="addToCart('Ferrero Rocher Milkshake', 140, parseInt(document.getElementById('quantity-Milkshakes').value))">
+          <h3>Ferrero Rocher Milkshake</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <div class="quantity">
+            <label for="quantity-Milkshakes">Quantity:</label>
+            <select id="quantity-Milkshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\KitKat Milkshake.jpeg" alt="KitKat Milkshake" onclick="addToCart('KitKat Milkshake', 140, parseInt(document.getElementById('quantity-Milkshakes').value))">
+          <h3>KitKat Milkshake</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <div class="quantity">
+            <label for="quantity-Milkshakes">Quantity:</label>
+            <select id="quantity-Milkshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Strawberry Milkshake.jpeg" alt="Strawberry Milkshake" onclick="addToCart('Strawberry Milkshake', 130, parseInt(document.getElementById('quantity-Milkshakes').value))">
+          <h3>Strawberry Milkshake</h3>
+          <p><strong>Price: ₹130</strong></p>
+          <div class="quantity">
+            <label for="quantity-Milkshakes">Quantity:</label>
+            <select id="quantity-Milkshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Chocolate Milkshake.jpeg" alt="Chocolate Milkshake" onclick="addToCart('Chocolate Milkshake', 140, parseInt(document.getElementById('quantity-Milkshakes').value))">
+          <h3>Chocolate Milkshake</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <div class="quantity">
+            <label for="quantity-Milkshakes">Quantity:</label>
+            <select id="quantity-Milkshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Rich Vanilla Milkshake.jpeg" alt="Rich Vanilla Milkshake" onclick="addToCart('Rich Vanilla Milkshake', 130, parseInt(document.getElementById('quantity-Milkshakes').value))">
+          <h3>Rich Vanilla Milkshake</h3>
+          <p><strong>Price: ₹130</strong></p>
+          <div class="quantity">
+            <label for="quantity-Milkshakes">Quantity:</label>
+            <select id="quantity-Milkshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Butterscotch MilkShake.jpeg" alt="Butterscotch MilkShake" onclick="addToCart('Butterscotch MilkShake', 140, parseInt(document.getElementById('quantity-Milkshakes').value))">
+          <h3>Butterscotch MilkShake</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <div class="quantity">
+            <label for="quantity-Milkshakes">Quantity:</label>
+            <select id="quantity-Milkshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+       
+        <!-- Add MilkShakes items here -->
+       
+      </div>
+    </div>
+
+
+    <!-- ThickShakes -->
+    <div class="menu-group" id="ThickShakes">
+      <h2>ThickShakes</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Nuts Milkshake.jpeg" alt="Nuts Thickshakes" onclick="addToCart('Nuts Thickshakes', 150, parseInt(document.getElementById('quantity-Thickshakes').value))">
+          <h3>Nuts Thickshakes</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <div class="quantity">
+            <label for="quantity-Thickshakes">Quantity:</label>
+            <select id="quantity-Thickshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Oreo Milkshake.jpeg" alt="Oreo Thickshakes" onclick="addToCart('Oreo Thickshakes', 150, parseInt(document.getElementById('quantity-Thickshakes').value))">
+          <h3>Oreo Thickshakes</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <div class="quantity">
+            <label for="quantity-Thickshakes">Quantity:</label>
+            <select id="quantity-Thickshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Ferrero Rocher Milkshake.jpeg" alt="Ferrero Rocher Thickshakes" onclick="addToCart('Ferrero Rocher Thickshakes', 150, parseInt(document.getElementById('quantity-Thickshakes').value))">
+          <h3>Ferrero Rocher Thickshakes</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <div class="quantity">
+            <label for="quantity-Thickshakes">Quantity:</label>
+            <select id="quantity-Thickshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\KitKat Milkshake.jpeg" alt="KitKat Thickshakes" onclick="addToCart('KitKat Thickshakes', 150, parseInt(document.getElementById('quantity-Thickshakes').value))">
+          <h3>KitKat Thickshakes</h3>
+          <p><strong>Price: ₹150</strong></p>
+          <div class="quantity">
+            <label for="quantity-Thickshakes">Quantity:</label>
+            <select id="quantity-Thickshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Strawberry Milkshake.jpeg" alt="Strawberry Thickshakes" onclick="addToCart('Strawberry Thickshakes', 130, parseInt(document.getElementById('quantity-Thickshakes').value))">
+          <h3>Strawberry Thickshakes</h3>
+          <p><strong>Price: ₹130</strong></p>
+          <div class="quantity">
+            <label for="quantity-Thickshakes">Quantity:</label>
+            <select id="quantity-Thickshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Chocolate Milkshake.jpeg" alt="Chocolate Thickshakes" onclick="addToCart('Chocolate Thickshakes', 140, parseInt(document.getElementById('quantity-Thickshakes').value))">
+          <h3>Chocolate Thickshakes</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <div class="quantity">
+            <label for="quantity-Thickshakes">Quantity:</label>
+            <select id="quantity-Thickshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Rich Vanilla Milkshake.jpeg" alt="Rich Vanilla Thickshakes" onclick="addToCart('Rich Vanilla Thickshakes', 130, parseInt(document.getElementById('quantity-Thickshakes').value))">
+          <h3>Rich Vanilla Thickshakes</h3>
+          <p><strong>Price: ₹130</strong></p>
+          <div class="quantity">
+            <label for="quantity-Thickshakes">Quantity:</label>
+            <select id="quantity-Thickshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\MilkShakes\Butterscotch MilkShake.jpeg" alt="Butterscotch Thickshakes" onclick="addToCart('Butterscotch Thickshakes', 140, parseInt(document.getElementById('quantity-Thickshakes').value))">
+          <h3>Butterscotch Thickshakes</h3>
+          <p><strong>Price: ₹140</strong></p>
+          <div class="quantity">
+            <label for="quantity-Thickshakes">Quantity:</label>
+            <select id="quantity-Thickshakes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+       
+        <!-- Add ThickShakes items here -->
+       
+      </div>
+    </div>
+
+    <!-- Combos -->
+    <div class="menu-group" id="Combos">
+      <h2>Combos</h2>
+
+      <!-- Subheading for veg Combos -->
+      <h3 class="menu-subheading">veg Combos</h3>
+
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Veg Burger Combo.jpeg" alt="Veg Burger Combo" onclick="addToCart('Veg Burger Combo', 190, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Veg Burger Combo</h3>
+          <p><strong>Price: ₹190</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Cheese Burger Combo.jpeg" alt="Cheese Burger Combo" onclick="addToCart('Cheese Burger Combo', 210, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Cheese Burger Combo</h3>
+          <p><strong>Price: ₹210</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Paneer Burger Combo.jpeg" alt="Paneer Burger Combo" onclick="addToCart('Paneer Burger Combo', 220, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Paneer Burger Combo</h3>
+          <p><strong>Price: ₹220</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Veg Sandwich.jpg" alt="Veg Sandwich Combo" onclick="addToCart('Veg Sandwich Combo', 190, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Veg Sandwich Combo</h3>
+          <p><strong>Price: ₹190</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Cheese Sandwich.jpg" alt="Cheese Sandwich" onclick="addToCart('Cheese Sandwich', 210, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Cheese Sandwich</h3>
+          <p><strong>Price: ₹210</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Paneer Sandwich.jpg" alt="Paneer Sandwich" onclick="addToCart('Paneer Sandwich', 220, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Paneer Sandwich</h3>
+          <p><strong>Price: ₹220</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Veg Lollipop.jpg" alt="Veg Lollipop" onclick="addToCart('Veg Lollipop', 180, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Veg Lollipop</h3>
+          <p><strong>Price: ₹180</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Corn Rolls.jpg" alt="Corn Rolls" onclick="addToCart('Corn Rolls', 180, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Corn Rolls</h3>
+          <p><strong>Price: ₹180</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Veg Fingers.jpg" alt="Veg Fingers" onclick="addToCart('Veg Fingers', 180, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Veg Fingers</h3>
+          <p><strong>Price: ₹180</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Aloo tikki.png" alt="Aloo tikki" onclick="addToCart('Aloo tikki', 180, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Aloo tikki</h3>
+          <p><strong>Price: ₹180</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Aloo tikki.png" alt="Veg Nuggets" onclick="addToCart('Veg Nuggets', 180, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Veg Nuggets</h3>
+          <p><strong>Price: ₹180</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subheading for Non veg Combos -->
+      <h3 class="menu-subheading">Non veg Combos</h3>
+
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken Burger Combo.jpeg" alt="Chicken Burger" onclick="addToCart('CChicken Burger', 240, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken Burger</h3>
+          <p><strong>Price: ₹240</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken Sandwich.jpg" alt="Chicken Sandwich" onclick="addToCart('CChicken Sandwich', 240, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken Sandwich</h3>
+          <p><strong>Price: ₹240</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken Lollipop.jpeg" alt="Chicken Lollipop" onclick="addToCart('Chicken Lollipop', 280, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken Lollipop</h3>
+          <p><strong>Price: ₹280</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken Wings.jpeg" alt="Chicken Wings" onclick="addToCart('Chicken Wings', 280, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken Wings</h3>
+          <p><strong>Price: ₹280</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken Boneless Stripes.jpg" alt="Chicken Boneless Stripes" onclick="addToCart('Chicken Boneless Stripes', 280, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken Boneless Stripes</h3>
+          <p><strong>Price: ₹280</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Fried Chicken Combo.jpeg" alt="Fried Chicken Combo" onclick="addToCart('Fried Chicken Combo', 280, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Fried Chicken Combo</h3>
+          <p><strong>Price: ₹280</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken PopCorn.jpg" alt="Chicken PopCorn" onclick="addToCart('Chicken PopCorn', 270, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken PopCorn</h3>
+          <p><strong>Price: ₹270</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken Nuggets.jpg" alt="Chicken Nuggets" onclick="addToCart('Chicken Nuggets', 270, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken Nuggets</h3>
+          <p><strong>Price: ₹270</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Fish Stripes.jpg" alt="Fish Stripes" onclick="addToCart('Fish Stripes', 300, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Fish Stripes</h3>
+          <p><strong>Price: ₹300</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subheading for Chines Combos -->
+      <h3 class="menu-subheading">Chines Combos</h3>
+
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Veg. Noodles + Veg Manchurian + Coke.png" alt="Veg. Noodles + Veg Manchurian + Coke" onclick="addToCart('Veg. Noodles + Veg Manchurian + Coke', 159, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Veg. Noodles + Veg Manchurian + Coke</h3>
+          <p><strong>Price: ₹159</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Fried rice + Manchuria + coke.png" alt="Fried rice + Manchuria + coke" onclick="addToCart('Fried rice + Manchuria + coke', 159, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Fried rice + Manchuria + coke</h3>
+          <p><strong>Price: ₹159</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Egg  Noodles + Egg Manchurian + Coke.png" alt="Egg  Noodles + Egg Manchurian + Coke" onclick="addToCart('Egg  Noodles + Egg Manchurian + Coke', 189, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Egg  Noodles + Egg Manchurian + Coke</h3>
+          <p><strong>Price: ₹189</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Egg Fried rice + Egg Manchuria + coke.png" alt="Egg Fried rice + Egg Manchuria + coke" onclick="addToCart('Egg Fried rice + Egg Manchuria + coke', 189, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Egg Fried rice + Egg Manchuria + coke</h3>
+          <p><strong>Price: ₹189</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken Noodles + Chicken Manchurian + Coke.png" alt="Chicken Noodles + Chicken Manchurian + Coke" onclick="addToCart('Chicken Noodles + Chicken Manchurian + Coke', 279, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken Noodles + Chicken Manchurian + Coke</h3>
+          <p><strong>Price: ₹279</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Combos\Chicken Fried rice + Chicken Manchuria + coke.png" alt="Chicken Fried rice + Chicken Manchuria + coke" onclick="addToCart('Chicken Fried rice + Chicken Manchuria + coke', 279, parseInt(document.getElementById('quantity-Combos').value))">
+          <h3>Chicken Fried rice + Chicken Manchuria + coke</h3>
+          <p><strong>Price: ₹279</strong></p>
+          <div class="quantity">
+            <label for="quantity-Combos">Quantity:</label>
+            <select id="quantity-Combos">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Soft drinks -->
+    <div class="menu-group" id="Soft drinks">
+      <h2>Soft drinks</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Soft Drinks\coke.jpg" alt="coco-cola" onclick="addToCart('coco-cola', 20, parseInt(document.getElementById('quantity-coco-cola').value))">
+          <h3>coco-cola</h3>
+          <p><strong>Price: ₹20</strong></p>
+          <div class="quantity">
+            <label for="quantity-coco-cola">Quantity:</label>
+            <select id="quantity-coco-cola">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Soft Drinks\sprite-250-ml.webp" alt="sprite" onclick="addToCart('sprite', 20, parseInt(document.getElementById('quantity-sprite').value))">
+          <h3>sprite</h3>
+          <p><strong>Price: ₹20</strong></p>
+          <div class="quantity">
+            <label for="quantity-sprite">Quantity:</label>
+            <select id="quantity-sprite">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="Images\menu\Soft Drinks\thumbs up.jpg" alt="thumbs up" onclick="addToCart('thumbs up', 149, parseInt(document.getElementById('quantity-thumbs up').value))">
+          <h3>thumbs up</h3>
+          <p><strong>Price: ₹20</strong></p>
+          <div class="quantity">
+            <label for="quantity-thumbs up">Quantity:</label>
+            <select id="quantity-thumbs up">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bisleri water -->
+    <div class="menu-group" id="bisleri water">
+      <h2>bisleri water</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="Images\menu\Soft Drinks\bisleri-mineral-water.webp" alt="bisleri water 500ml" onclick="addToCart('bisleri water 500ml', 10, parseInt(document.getElementById('quantity-bisleri water').value))">
+          <h3>bisleri water 500ml</h3>
+          <p><strong>Price: ₹10</strong></p>
+          <div class="quantity">
+            <label for="quantity-coco-cola">Quantity:</label>
+            <select id="quantity-coco-cola">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Cart</h2>
+    <div id="cart-items">
+      <p>Your cart is empty. Add items to see them here!</p>
+    </div>
+    <p id="cart-total">Total: ₹0</p>
+    <div class="payment">
+      <h3>Payment</h3>
+      
+      <label for="payment-amount">Enter Payment Amount: </label>
+      <input type="number" id="payment-amount" placeholder="Enter amount">
+      
+      <label for="discount-percentage">Enter Discount (%): </label>
+      <input type="number" id="discount-percentage" placeholder="0" min="0" max="100">
+
+      <!-- Replace buttons with Unicode symbols -->
+      <span 
+        onclick="generateBill()" 
+        style="cursor: pointer; font-size: 24px; margin: 0 10px;" 
+        title="Generate Bill">🧾
+      </span>
+      <span 
+        onclick="downloadBill()" 
+        style="cursor: pointer; font-size: 24px; margin: 0 10px;" 
+        title="Download Bill">⬇️
+      </span>
+      <span 
+        onclick="printBill()" 
+        style="cursor: pointer; font-size: 24px; margin: 0 10px;" 
+        title="Print Bill">🖨️
+      </span>
+      <span 
+        onclick="Order()" 
+        style="cursor: pointer; font-size: 24px; margin: 0 10px;" 
+        title="Order">🛒
+      </span>
+      
+      <div>
+        <select id="table-number" required>
+            <option value="" disabled selected>Select Table</option>
+            <option value="1">Table 1</option>
+            <option value="2">Table 2</option>
+            <option value="3">Table 3</option>
+            <option value="4">Table 4</option>
+            <option value="5">Table 5</option>
+        </select>
+      </div>
+      
+
+      <div>
+        <label>
+            <input type="radio" name="pickup-type" value="Pickup" checked> Pickup
+            <input type="radio" name="pickup-type" value="Table"> Table
+        </label>
+      </div>
+
+      <select id="order-type">
+        <option value="Pickup">Pickup</option>
+        <option value="Table">Table</option>
+        <option value="Zomato">Zomato</option>
+        <option value="Swiggy">Swiggy</option>
+      </select>
+
+      <section id="inventory" class="inventory">
+        <h2>Inventory Status</h2>
+        <div id="inventory-status">
+            <!-- Inventory stock will be displayed here -->
+        </div>
+      </section>
+
+    <pre id="generated-bill" class="bill-container"></pre>
+    </div>
+  </section>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

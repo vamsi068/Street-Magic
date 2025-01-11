@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Street Magic</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+	  <div class="logo">
+		<img src="Images\Home Page\streetmagic Logo.jpeg" alt="Street Magic Logo">
+	  </div>
+	  <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li> <!-- Back to the home page -->
+        <li><a href="about.html">About</a></li> <!-- Current page -->
+        <li><a href="index.html#reservations">Reservations</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="menu.html" class="btn">Menu</a></li>
+        <li><a href="login.html" class="btn">Login</a></li>
+      </ul>
+    </nav>
+	</header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Street Magic</h1>
+      <p>Experience the Taste of Perfection</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+  </section>
+<section class="about dark-theme">
+  <div class="about-content">
+    <h2>About Street Magic</h2>
+    <p>Experience the finest gourmet burgers in a cozy and rustic atmosphere. At Street Magic, we are dedicated to delivering exceptional flavors that will tantalize your taste buds.</p>
+    <p>Our chefs meticulously craft each item using locally sourced ingredients and unique flavor combinations. From juicy beef patties to mouthwatering vegetarian options, there's something for everyone.</p>
+    <a href="menu.html" class="btn">Explore Our Menu</a>
+  </div>
+  <div class="about-image">
+    <img src="Images\Home Page\biriyani.jpeg" alt="About Image">
+  </div>
+</section>
+<section class="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="Images\Home Page\Classic burger.jpeg" alt="Burger 1">
+      <h3>Classic burger</h3>
+      <p>A juicy chicken patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served with a side of crispy french fries and coke.</p>
+    </div>
+    <div class="menu-item">
+      <img src="Images\Home Page\pizza.jpg" alt="Pizza 2">
+      <h3>Chicken Pizza</h3>
+      <p>A delicious chicken pizza made from a blend of fresh vegetables and spices. Topped with cheese, chicken cuides, and onions. Served with a side of crispy french fries and coke.</p>
+    </div>
+    <div class="menu-item">
+      <img src="Images\Home Page\kfc.jpeg" alt="Fried Chicken 3">
+      <h3>Fried Chicken</h3>
+      <p>A fried chicken packed with flavor! Grilled chicken breast smothered in spicy sauce, topped with chipotle mayo. Served with a side of crispy french fries and coke.</p>
+    </div>
+  </div>
+</section>
+
+ <!-- Reservation Section -->
+  <section id="reservations" class="reservations">
+   <div class="reservation-form">
+      <h2>Make a Reservation</h2>
+      <form id="reservation-form">
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+          <input type="email" name="email" id="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+          <input type="date" name="date" id="date" required>
+          <input type="time" name="time" id="time" required>
+          <textarea name="message" id="message" placeholder="Additional Message" rows="5"></textarea>
+          <button type="submit">Submit</button>
+      </form>
+      <p id="reservation-status" class="hidden"></p>
+    </div>
+  </section>
+  
+<section class="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial">
+    <img src="Images\Home Page\boy.jpeg" alt="Customer 1">
+    <p>"The burgers at Street Magic are simply amazing! The flavors are rich, and the ingredients are always fresh. It's my go-to place whenever I'm craving a delicious meal."</p>
+    <h4>John Doe</h4>
+  </div>
+  <div class="testimonial">
+    <img src="Images\Home Page\girl.jpeg" alt="Customer 2">
+    <p>"Street Magic never disappoints! The quality of their burgers and the friendly service make it a top-notch dining experience. I highly recommend it to all burger lovers!"</p>
+    <h4>Jane Smith</h4>
+  </div>
+</section>
+<section class="gallery">
+  <h2>Gallery</h2>
+  <div class="image-grid">
+    <div class="image-item">
+      <img src="Images\Home Page\res1.jpeg" alt="Image 1">
+    </div>
+    <div class="image-item">
+      <img src="Images\Home Page\res2.jpeg" alt="Image 2">
+    </div>
+    <div class="image-item">
+      <img src="Images\Home Page\res3.jpeg" alt="Image 3">
+    </div>
+    <div class="image-item">
+      <img src="Images\Home Page\res4.jpeg" alt="Image 4">
+    </div>
+  </div>
+</section>
+<section class="contact">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>48-11/3-5C, Currency Nagar Road-6, Vijayawada, India</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <p>+91 8885999948</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <p>thirumanisrinivasarao@gmail.com</p>
+      </div>
+    </div>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="Images\Home Page\streetmagic Logo.jpeg" alt="Logo">
+    </div>
+    <nav class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Menu</a>
+      <a href="#">Reservations</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <p class="footer-text">&copy; 2024 Street Magic. All rights reserved.</p>
+</footer>
+</body>
+</html>

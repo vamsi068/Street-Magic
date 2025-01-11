@@ -1,0 +1,105 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.3s;
+}
+
+.tab.active {
+    background-color: #ff5c1e;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+form {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form.active {
+    display: flex;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff5c1e;
+}
+
+.btn {
+    background-color: #ff5c1e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e04d17;
+}
+
+.forgot {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #ff5c1e;
+    text-decoration: none;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.signup-link a {
+    color: #ff5c1e;
+    text-decoration: none;
+}
