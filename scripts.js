@@ -6,6 +6,7 @@ const inventory = {
     "Chicken Burger": 50,
 };
 
+
 // Initialize the cart and bill count
 const cart = [];
 let billGenerated = false;
