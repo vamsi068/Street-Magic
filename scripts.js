@@ -247,6 +247,8 @@ function updateFontSize() {
 }
 
 
+let kotCounter = 1;  // Counter for KOT numbers
+
 function Order() {
     // Check if the cart is empty
     if (!cart || cart.length === 0) {
@@ -255,7 +257,7 @@ function Order() {
     }
 
     const now = new Date();
-    const date = now.toLocaleDateString(); // Current date (e.g., "01/05/2025")
+    const date = now.toLocaleDateString();  // Current date (e.g., "01/20/2025")
     const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
     // Get the pickup type (default to "Pickup" if not selected)
@@ -266,78 +268,46 @@ function Order() {
     const tableNumberElement = document.getElementById('table-number');
     const tableNumber = (pickupType === "Table" && tableNumberElement && tableNumberElement.value)
         ? tableNumberElement.value
-        : null;
+        : "N/A";
 
-    // Get the discount percentage
-    const discountInput = document.getElementById('discount-percentage');
-    const discountPercentage = discountInput ? parseFloat(discountInput.value) : 0;
+    // Increment KOT number for each new bill
+    const kotNumber = kotCounter++;
 
-    // Get the payment amount
-    const paymentInput = document.getElementById('payment-amount');
-    const paymentAmount = paymentInput ? parseFloat(paymentInput.value) : 0;
-
-    // Prepare the order bill for a 3-inch paper
+    // Prepare the order bill with uppercase address
     let orderBill = "         STREET MAGIC\n";
-    orderBill += "    CURRENCY NAGAR, 6TH LANE\n";
-    orderBill += "  ANJANEYA SWAMI TEMPLE ROAD\n";
-    orderBill += "       VIJAYAWADA-520008\n";
-    orderBill += "         MO: 8885999948\n";
-    orderBill += "-------------------------------\n";
-    orderBill += `Date: ${date}  ${time}\n`;
-    orderBill += `Pickup: ${pickupType}\n`;
-    if (tableNumber) {
-        orderBill += `Table: ${tableNumber}\n`;
+    orderBill += `Date: ${date}       ${time}\n`;
+    orderBill += `KOT No: ${kotNumber}     ${pickupType}\n`;
+    if (pickupType === "Table") {
+        orderBill += `Table Number: ${tableNumber}\n`;
     }
-    orderBill += "-------------------------------\n";
-    orderBill += "No. Item            Qty   Price\n";
-    orderBill += "-------------------------------\n";
+    orderBill += "---------------------------------------------\n";
+    orderBill += "No. Item                  Qty\n";
+    orderBill += "---------------------------------------------\n";
 
     let totalItems = 0;
-    let totalPrice = 0;
+    let totalQuantity = 0;
 
     cart.forEach((item, index) => {
-        const itemTotal = item.quantity * item.price; // Assuming `price` is part of each cart item
+        let itemName = item.name;
+        let qty = item.quantity.toString().padStart(4);
 
-        // Adjust item name for smaller width (max 15 characters)
-        const maxNameLength = 15;
-        const itemNameLines = item.name.match(new RegExp(`.{1,${maxNameLength}}`, 'g')) || [item.name];
-
-        // Print the first line of the item name with quantity and price
-        orderBill += `${(index + 1).toString().padEnd(3)} ${itemNameLines[0].padEnd(maxNameLength)} ${item.quantity.toString().padStart(3)} ₹${itemTotal.toFixed(2).padStart(6)}\n`;
-
-        // Print additional lines of the item name (indented)
-        for (let i = 1; i < itemNameLines.length; i++) {
-            orderBill += `    ${itemNameLines[i]}\n`;
+        // Split long item names into two lines if necessary
+        if (itemName.length > 20) {
+            orderBill += `${(index + 1).toString().padEnd(3)} ${itemName.substring(0, 20)} ${qty}\n`;
+            orderBill += `    ${itemName.substring(20)}\n`;  // Print remaining name on the next line
+        } else {
+            orderBill += `${(index + 1).toString().padEnd(3)} ${itemName.padEnd(20)} ${qty}\n`;
         }
 
-        totalItems += item.quantity;
-        totalPrice += itemTotal;
+        totalItems++;
+        totalQuantity += item.quantity;
     });
 
-    // Apply discount if applicable
-    const discountAmount = (discountPercentage / 100) * totalPrice;
-    const finalTotal = totalPrice - discountAmount;
-
-    // Calculate return change or balance
-    const balanceAmount = paymentAmount - finalTotal;
-
-    orderBill += "-------------------------------\n";
-    orderBill += `Subtotal: ₹${totalPrice.toFixed(2)}\n`;
-    if (discountPercentage > 0) {
-        orderBill += `Discount: -₹${discountAmount.toFixed(2)}\n`;
-    }
-    orderBill += `Total: ₹${finalTotal.toFixed(2)}\n`;
-    orderBill += `Payment: ₹${paymentAmount.toFixed(2)}\n`;
-    if (balanceAmount >= 0) {
-        orderBill += `Change: ₹${balanceAmount.toFixed(2)}\n`;
-    } else {
-        orderBill += `Due: ₹${Math.abs(balanceAmount).toFixed(2)}\n`;
-    }
-    orderBill += "-------------------------------\n";
-    orderBill += "      THANKS FOR VISITING!\n";
+    orderBill += "---------------------------------------------\n";
+    orderBill += `Total Items: ${totalItems}   Quantity: ${totalQuantity}\n`;
 
     // Open a new window for printing the order bill
-    const printWindow = window.open('', '', 'width=300,height=600');
+    const printWindow = window.open('', '', 'width=800,height=600');
 
     if (printWindow) {
         printWindow.document.write(`
@@ -347,13 +317,13 @@ function Order() {
                 <style>
                     body {
                         font-family: 'Courier New', Courier, monospace;
+                        padding: 20px;
                         margin: 0;
-                        padding: 10px;
                         text-align: center;
                     }
                     pre {
-                        font-size: 12px;
-                        line-height: 1.4;
+                        font-size: 14px;
+                        line-height: 1.6;
                         text-align: left;
                     }
                 </style>
@@ -368,28 +338,9 @@ function Order() {
         printWindow.focus();
         printWindow.print();
         printWindow.close();
-
-        // Refresh the cart after printing
-        clearCart();
     } else {
         alert("Popup blocker is enabled. Please disable it to print the order bill.");
     }
-}
-
-// Function to clear the cart
-function clearCart() {
-    // Reset the cart array
-    cart = [];
-
-    // Reset the cart display
-    document.getElementById("cart-items").innerHTML = '<p>Your cart is empty. Add items to see them here!</p>';
-    document.getElementById("cart-total").innerText = 'Total: ₹0';
-
-    // Reset the discount and payment fields
-    const discountInput = document.getElementById('discount-percentage');
-    if (discountInput) discountInput.value = '';
-    const paymentInput = document.getElementById('payment-amount');
-    if (paymentInput) paymentInput.value = '';
 }
 
 
