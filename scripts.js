@@ -98,131 +98,136 @@ function removeItem(index) {
     updateInventoryDisplay();
 }
 
-function clearCart() {
-    document.getElementById("cart-items").innerHTML = '<p>Your cart is empty. Add items to see them here!</p>';
-    document.getElementById("cart-total").innerText = 'Total: ₹0';
-}
-
-function printBill() {
-    const billElement = document.getElementById("generated-bill");
-
-    // Print the bill
-    const billContent = billElement.innerText;
-    const printWindow = window.open('', '_blank');
-    printWindow.document.write('<pre>' + billContent + '</pre>');
-    printWindow.document.close();
-    printWindow.print();
-
-    // Clear the cart
-    clearCart();
-
-    // Optionally, clear the generated bill section
-    billElement.innerText = '';
-}
-
 function generateBill() {
-    if (cart.length === 0) {
+    if (!cart || cart.length === 0) {
         alert("Cart is empty. Add items to generate a bill.");
         return;
     }
 
     const now = new Date();
-    const date = now.toLocaleDateString(); // Current date in string format (e.g., "01/04/2025")
+    const date = now.toLocaleDateString();  // e.g., "01/20/2025"
     const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
     const paymentAmount = parseFloat(document.getElementById("payment-amount").value);
-    const orderType = document.getElementById("order-type").value; // Get the selected order type
+    const orderType = document.getElementById("order-type").value;  // Get the selected order type
 
     if (isNaN(paymentAmount) || paymentAmount <= 0) {
         alert("Please enter a valid payment amount.");
         return;
     }
 
-    // Get the last token number and date from localStorage
+    // Manage token number per day using localStorage
     const lastTokenData = JSON.parse(localStorage.getItem("tokenData")) || { date: "", tokenNumber: 0 };
-
     let tokenNumber;
+
     if (lastTokenData.date === date) {
-        // Same day, increment the token number
         tokenNumber = lastTokenData.tokenNumber + 1;
     } else {
-        // New day, reset token number to 1
-        tokenNumber = 1;
+        tokenNumber = 1;  // Reset token number if it's a new day
     }
 
-    // Update localStorage with the new token number and date
-    localStorage.setItem(
-        "tokenData",
-        JSON.stringify({ date: date, tokenNumber: tokenNumber })
-    );
+    localStorage.setItem("tokenData", JSON.stringify({ date: date, tokenNumber: tokenNumber }));
 
-    let bill = "      STREET MAGIC\n";
-    bill += "   DOOR.NO:48-11/3-5C,\n";
-    bill += "     CURRENCY NAGAR,\n";
-    bill += "        6th LANE,\n";
-    bill += " Anjaneya Swami Temple Rd,\n";
-    bill += "      VIJAYAWADA-520008\n";
-    bill += "        MO: 8885999948\n";
-    bill += "-----------------------------\n";
-    bill += `Date: ${date}  ${time}\n`;
-    bill += `Cashier: Vamsi     BillNo: ${billCount}\n`;
-    bill += `Token: ${tokenNumber}     ${orderType}\n`;
-    bill += "-----------------------------\n";
-    bill += "No. Item          Qty  Amount\n";
-    bill += "-----------------------------\n";
+    // Bill Header
+    let bill = "         STREET MAGIC\n";
+    bill += "      DOOR.NO:48-11/3-5C,\n";
+    bill += "        CURRENCY NAGAR,\n";
+    bill += "           6th LANE,\n";
+    bill += "  Anjaneya Swami Temple Road,\n";
+    bill += "       VIJAYAWADA-520008\n";
+    bill += "         MO: 8885999948\n";
+    bill += "---------------------------------------------\n";
+    bill += `Date: ${date} ${time}  ${orderType}\n`;
+    bill += `Cashier: Vamsi BillNo: ${billCount} Token: ${tokenNumber}\n`;
+    bill += "----------------------------------------------\n";
+    bill += "No.Item Name           Qty  Price Amount\n";
+    bill += "----------------------------------------------\n";
 
     let index = 1;
     let grandTotal = 0;
     let totalQty = 0;
 
     cart.forEach((item) => {
-        const itemName = item.name;
-        const qty = item.quantity.toString().padEnd(4);
-        const amount = `₹${item.totalPrice.toFixed(2).padStart(6)}`;
-
+        let itemName = item.name;
         grandTotal += item.totalPrice;
         totalQty += item.quantity;
 
-        if (itemName.length > 15) {
-            // Wrap long item names to the next line
-            const firstLine = itemName.slice(0, 15);
-            const secondLine = itemName.slice(15);
+        if (itemName.length > 20) {
+            // Split long item names for better alignment
+            const firstLine = itemName.slice(0, 20);  // First 20 characters
+            const secondLine = itemName.slice(20);    // Remaining characters
 
-            bill += `${index.toString().padEnd(3)} ${firstLine}\n`;
-            bill += `    ${secondLine.padEnd(15)} ${qty} ${amount}\n`;
+            bill += `${index.toString().padEnd(3)} ${firstLine.padEnd(20)} ${item.quantity.toString().padEnd(3)} ₹${item.price.toString().padEnd(5)} ₹${item.totalPrice}\n`;
+            bill += `    ${secondLine.padEnd(20)}\n`;  // Indent the second line
         } else {
-            // Single-line item
-            bill += `${index.toString().padEnd(3)} ${itemName.padEnd(15)} ${qty} ${amount}\n`;
+            bill += `${index.toString().padEnd(3)} ${itemName.padEnd(20)} ${item.quantity.toString().padEnd(3)} ₹${item.price.toString().padEnd(5)} ₹${item.totalPrice}\n`;
         }
+        
         index++;
     });
 
     const change = paymentAmount - grandTotal;
 
-    bill += "-----------------------------\n";
-    bill += `Total Qty: ${totalQty.toString().padEnd(4)}  ₹${grandTotal.toFixed(2)}\n`;
+    bill += "----------------------------------------------\n";
+    bill += `Total Qty: ${totalQty.toString().padEnd(3)}  Sub Total: ₹${grandTotal}\n`;
+    bill += `Grand Total: ₹${grandTotal}\n`;
     if (change >= 0) {
-        bill += `Paid: ₹${paymentAmount.toFixed(2)}\n`;
-        bill += `Change: ₹${change.toFixed(2)}\n`;
+        bill += `Payment: ₹${paymentAmount}\n`;
+        bill += `Change to Return: ₹${change}\n`;
     } else {
-        bill += `Paid: ₹${paymentAmount.toFixed(2)}\n`;
-        bill += `Due: ₹${Math.abs(change).toFixed(2)}\n`;
+        bill += `Payment: ₹${paymentAmount}\n`;
+        bill += `Balance Due: ₹${Math.abs(change)}\n`;
     }
-    bill += "-----------------------------\n";
-    bill += "    THANKS FOR VISITING!\n";
+    bill += "----------------------------------------------\n";
+    bill += "     Thanks for Visiting!\n";
 
+    // Display bill in HTML
     const billElement = document.getElementById("generated-bill");
     billElement.textContent = bill;
-    billCount++;
 
-    localStorage.setItem("billCount", billCount);
-    billGenerated = true;
+    billCount++;  // Increment bill count
+    localStorage.setItem("billCount", billCount);  // Store updated bill count
 
     updateCart();
 }
 
 
+function printBill() {
+    const billContent = document.getElementById("generated-bill").textContent;
 
+    if (!billContent.trim()) {
+        alert("Please generate the bill first.");
+        return;
+    }
 
+    const printWindow = window.open('', '', 'width=800,height=600');
+    printWindow.document.write(`
+        <html>
+        <head>
+            <title>Street Magic - Bill</title>
+            <style>
+                body {
+                    font-family: 'Courier New', Courier, monospace;
+                    padding: 20px;
+                    margin: 0;
+                }
+                pre {
+                    font-size: 14px;
+                    line-height: 1.6;
+                }
+            </style>
+        </head>
+        <body>
+            <pre>${billContent}</pre>
+        </body>
+        </html>
+    `);
+
+    printWindow.document.close();
+    printWindow.focus();
+    printWindow.print();
+    printWindow.close();
+}
 
 function downloadBill() {
     if (!billGenerated) {
@@ -276,7 +281,7 @@ function Order() {
     // Prepare the order bill with uppercase address
     let orderBill = "         STREET MAGIC\n";
     orderBill += `Date: ${date}       ${time}\n`;
-    orderBill += `KOT No: ${kotNumber}     ${pickupType}\n`;
+    orderBill += `KOT No: ${kotNumber}       ${pickupType}\n`;
     if (pickupType === "Table") {
         orderBill += `Table Number: ${tableNumber}\n`;
     }
@@ -342,12 +347,3 @@ function Order() {
         alert("Popup blocker is enabled. Please disable it to print the order bill.");
     }
 }
-
-
-
-
-
-
-
-
-
